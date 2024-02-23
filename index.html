@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Массивы</title>
+  </head>
+  <body>
+    <script>
+       function calculatePower(base, exponent = 1) {
+        return Math.pow(base, exponent);
+      }
+
+      var number = parseInt(prompt("Введите число:"));
+      var power = parseInt(prompt("Введите степень:"));
+
+      var result = calculatePower(number, power);
+
+      document.write("Результат: " + result);
+      function setMonth() {
+        var month = parseInt(prompt("Введите число от 1 до 12:"));
+        window.month = month;
+      }
+      //2
+      // функция setMonth запрашивает у пользователя число от 1 до 12 и сохраняет его в глобальную переменную month.
+      // Затем вторая функция getMonthName использует значение глобальной переменной month для определения названия календарного месяца
+      // с помощью оператора switch. Результат выводится на веб-страницу с помощью метода document.write.
+      // function setMonth() {
+      //   var month = parseInt(prompt("Введите число от 1 до 12:"));
+      //   window.month = month;
+      // }
+
+      // function getMonthName() {
+      //   var monthName;
+      //   switch (window.month) {
+      //     case 1:
+      //       monthName = "Январь";
+      //       break;
+      //     case 2:
+      //       monthName = "Февраль";
+      //       break;
+      //     case 3:
+      //       monthName = "Март";
+      //       break;
+      //     case 4:
+      //       monthName = "Апрель";
+      //       break;
+      //     case 5:
+      //       monthName = "Май";
+      //       break;
+      //     case 6:
+      //       monthName = "Июнь";
+      //       break;
+      //     case 7:
+      //       monthName = "Июль";
+      //       break;
+      //     case 8:
+      //       monthName = "Август";
+      //       break;
+      //     case 9:
+      //       monthName = "Сентябрь";
+      //       break;
+      //     case 10:
+      //       monthName = "Октябрь";
+      //       break;
+      //     case 11:
+      //       monthName = "Ноябрь";
+      //       break;
+      //     case 12:
+      //       monthName = "Декабрь";
+      //       break;
+      //     default:
+      //       monthName = "Некорректное число";
+      //   }
+
+      //   document.write("Месяц: " + monthName);
+      // }
+      // setMonth();
+      // getMonthName();
+      //3
+      // function findMaxElement(arr) {
+      //   var max = arr[0];
+      //   for (var i = 1; i < arr.length; i++) {
+      //     if (arr[i] > max) {
+      //       max = arr[i];
+      //     }
+      //   }
+      //   return max;
+      // }
+
+      // function displayResult(max) {
+      //   var result;
+      //   if (max < 10) {
+      //     result = "Максимальный элемент находится в диапазоне от 0 до 9";
+      //   } else if (max >= 10 && max <= 100) {
+      //     result = "Максимальный элемент находится в диапазоне от 10 до 100";
+      //   } else {
+      //     result = "Максимальный элемент находится в диапазоне свыше 100";
+      //   }
+
+      //   document.write(result);
+      // }
+      // var numbers = [5, 20, 80, 90, 3];
+      // var maxElement = findMaxElement(numbers);
+      // displayResult(maxElement);
+      //4
+      // function repeat(str, n = 2) {
+      //   var result = "Hello"+"<br>";
+      //   for (var i = 0; i < n; i++) {
+      //     result += str;
+      //   }
+      //   return result;
+      // }
+
+      // document.write(repeat("Hi"+"<br>", 5));
+      //5
+      // var a = parseInt(prompt("Введите число a:"));
+      // var b = parseInt(prompt("Введите степень b:"));
+      // var c = parseInt(prompt("Введите степень c:"));
+
+      // document.write((a * b) / c);
+      //6
+      // function addN(n) {
+      //   return function (arg) {
+      //     document.write(arg + n);
+      //   };
+      // }
+
+      // var add5 = addN(10);
+      // add5(115);
+
+    </script>
+  </body>
+</html>
